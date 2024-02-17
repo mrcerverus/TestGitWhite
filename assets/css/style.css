@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+/* Reset parametros */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Definicion de colores */
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fondo: #1e1a13;
+}
+/*  Globales **/
+
+@media (max-width: 768px) {    
+article {
+    flex-direction: column;
+}
+
+section#descripcion {
+    flex-direction: column;
+}
+
+.parrafo_descrip, .image_descrip {
+    width: 100%;
+}
+}
+
+/* formatao de Body */
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--blanco);
+    background-color: var(--negro);
+    text-align: center;
+}
+
+/* formatao de Header */
+
+header{
+    font-size: 2rem;
+}
+header h1{
+    padding: .5rem;
+}
+header img{
+    width: 100%;
+    display: block;
+}
+
+/* formato seccion Descripcion */
+
+article{
+    padding: 3rem 3rem;
+    width: 100%;
+}
+
+#descripcion {
+    display: inline-flex;
+
+}
+
+
+.parrafo_descrip {
+    width: 40%;
+    padding: 10px;
+    text-align: left;
+}
+
+.parrafo_descrip p {
+    font-size: 1rem;
+    padding:  6rem 3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    vertical-align: middle;
+    font-size: large;
+}
+
+.image_descrip {
+    width: 40%;
+    text-align: center;
+    padding:  4rem 3rem;
+}
+
+.image_descrip img {
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+/* formato de iconos */
+
+#icons-sombra{
+    background-color: var(--fondo);
+    width: 100%;
+}
+#icons-sombra h2{
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+div .icons{
+    display: inline-flex;
+    
+}
+.icons section{
+    padding: 0rem 5rem;
+    padding-bottom: 4rem;
+}
+.icons i{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+section h3{
+    margin-top: -2rem;
+    font-weight: 300;
+    font-size: larger;
+}
+
+/* formato de fotografias */
+.fotografias{
+    padding: 3.5rem 7rem;
+}
+.cuadro_foto{
+    display: inline-block;
+    vertical-align: middle;
+}
+.cuadro_foto img{
+    width: 25rem;
+    height: 15rem; 
+}
+
+/* Formato de footer */
+
+footer{
+    background-color: var(--fondo);
+    padding: 5rem;
+    font-weight: 3rem;
+    font-size: larger;
+}
+footer a{
+    color: var(--blanco);
+    text-decoration: none;
+}
